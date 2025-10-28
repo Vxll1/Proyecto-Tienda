@@ -1,5 +1,6 @@
 <?php
     require_once 'autoload.php';
+    require_once 'Config/db.php';
     require_once 'Config/parameters.php';
     require_once 'Views/Layout/header.php';
     require_once 'Views/Layout/sidebar.php';
@@ -8,8 +9,6 @@
         $error = new ErrorController();
         $error->index();
     }
-
-    // require_once 'Views/Producto/destacados.php';
 
     if (isset($_GET['controller'])) {
         $nombre_controlador = $_GET['controller']. 'Controller';

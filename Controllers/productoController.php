@@ -1,5 +1,5 @@
 <?php
-    // require_once 'Models/Producto.php';
+    require_once 'Models/productoModels.php';
 
     class productoController {
         public function index() {
