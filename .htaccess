@@ -1,0 +1,13 @@
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteCond %{HTTP_HOST} (www\.)?gestiondeambientes.com
+RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+ErrorDocument 404 http://localhost/Proyecto-Tienda/ErrorController/index
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+setEnv ENVIRONMENT produccion
+
+RewriteRule ^(.*)/(.*) index.php?controller=$1&action=$2

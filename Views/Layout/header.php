@@ -2,7 +2,8 @@
 <html lang="es"> <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proyecto Tienda</title> <link rel="stylesheet" href="Assets/css/Estilos.css">
+    <title>Proyecto Tienda</title> 
+    <link rel="stylesheet" type="text/css" href="<?=base_url?>Assets/css/Estilos.css">
 </head>
 <body>
     <h1 class="Proyecto">Proyecto</h1>
